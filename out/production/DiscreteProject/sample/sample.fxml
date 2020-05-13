@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane fx:id="split" dividerPositions="0.7692307692307693" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="615.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="470.0">
+         <children>
+            <BorderPane layoutX="25.0" layoutY="77.0" onSwipeLeft="#prev" onSwipeRight="#next" prefHeight="227.0" prefWidth="419.0">
+               <right>
+                  <Button id="btnNext" mnemonicParsing="false" onAction="#next" onTouchPressed="#next" prefHeight="25.0" prefWidth="52.0" text="Next" BorderPane.alignment="CENTER" />
+               </right>
+               <left>
+                  <Button id="btnPrev" mnemonicParsing="false" onAction="#prev" onTouchPressed="#next" text="Prev" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin></Button>
+               </left>
+               <center>
+                  <GridPane prefHeight="227.0" prefWidth="307.0" BorderPane.alignment="CENTER">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="44.14" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="44.14" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="44.14" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="153.0" minWidth="10.0" prefWidth="44.14" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="174.0" minWidth="10.0" prefWidth="44.14" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="215.0" minWidth="10.0" prefWidth="44.14" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="44.14" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="96.0" minHeight="1.0" prefHeight="38.66" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="96.0" minHeight="1.0" prefHeight="38.66" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="38.66" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="38.66" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="201.0" minHeight="10.0" prefHeight="38.66" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="172.0" minHeight="34.0" prefHeight="38.66" />
+                        <RowConstraints maxHeight="172.0" minHeight="34.0" prefHeight="38.66" />
+                    </rowConstraints>
+                     <children>
+                        <Label prefHeight="17.0" prefWidth="33.0" text="SUN" />
+                        <Label text="MON" GridPane.columnIndex="1" />
+                        <Label text="TUE" GridPane.columnIndex="2" />
+                        <Label text="WED" GridPane.columnIndex="3" />
+                        <Label text="THU" GridPane.columnIndex="4" />
+                        <Label text="FRI" textFill="#f80606" GridPane.columnIndex="5" />
+                        <Label text="SAT" GridPane.columnIndex="6" />
+                        <Label fx:id="l0" GridPane.rowIndex="1" />
+                        <Label fx:id="l1" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                        <Label fx:id="l2" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                        <Label fx:id="l3" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                        <Label fx:id="l4" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                        <Label fx:id="l5" textFill="#f80606" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                        <Label fx:id="l6" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                        <Label fx:id="l7" GridPane.rowIndex="2" />
+                        <Label fx:id="l8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                        <Label fx:id="l9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label fx:id="l10" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                        <Label fx:id="l11" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                        <Label fx:id="l12" textFill="#f80606" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                        <Label fx:id="l13" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                        <Label fx:id="l14" GridPane.rowIndex="3" />
+                        <Label fx:id="l15" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                        <Label fx:id="l16" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                        <Label fx:id="l17" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                        <Label fx:id="l18" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                        <Label fx:id="l19" textFill="#f80606" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                        <Label fx:id="l20" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                        <Label fx:id="l21" GridPane.rowIndex="4" />
+                        <Label fx:id="l22" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                        <Label fx:id="l23" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                        <Label fx:id="l24" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                        <Label fx:id="l25" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                        <Label fx:id="l26" textFill="#f80606" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                        <Label fx:id="l27" GridPane.columnIndex="6" GridPane.rowIndex="4" />
+                        <Label fx:id="l28" GridPane.rowIndex="5" />
+                        <Label fx:id="l29" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <Label fx:id="l30" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                        <Label fx:id="l31" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                        <Label fx:id="l32" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+                        <Label fx:id="l33" textFill="#f80606" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                        <Label fx:id="l34" GridPane.columnIndex="6" GridPane.rowIndex="5" />
+                        <Label fx:id="l35" GridPane.rowIndex="6" />
+                        <Label fx:id="l36" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                  </GridPane>
+               </center>
+            </BorderPane>
+            <Label fx:id="month_label" layoutX="78.0" layoutY="40.0" prefHeight="25.0" prefWidth="44.0" />
+            <Label fx:id="year_label" layoutX="130.0" layoutY="40.0" prefHeight="25.0" prefWidth="44.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="130.0">
+         <children>
+            <Label layoutX="14.0" layoutY="37.0" text="MONTH" />
+            <TextField fx:id="month_field" layoutX="12.0" layoutY="60.0" prefHeight="25.0" prefWidth="114.0" promptText="Enter the Month">
+               <font>
+                  <Font name="System Italic" size="9.0" />
+               </font></TextField>
+            <TextField fx:id="year_field" layoutX="12.0" layoutY="119.0" prefHeight="25.0" prefWidth="114.0" promptText="Enter the Year">
+               <font>
+                  <Font name="System Italic" size="9.0" />
+               </font></TextField>
+            <Label layoutX="14.0" layoutY="94.0" text="YEAR" />
+            <Button id="btnEnter" fx:id="btn_enter" layoutX="10.0" layoutY="174.0" mnemonicParsing="false" onAction="#onClick" onKeyPressed="#onClick" onTouchPressed="#onClick" text="ENTER" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
